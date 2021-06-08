@@ -1,0 +1,49 @@
+body, a{
+  color:#212121;
+
+}
+body{
+  font-family: 'Roboto', sans-serif;
+}
+h1{
+  font-family: Roboto;
+  font-size: 60px;
+  line-height: 70.31px;
+}
+h2{
+  font-size: 32px;
+}
+h3{
+  font-size: 24px;
+}
+header{
+  font-size: 14px;
+  color: #616161;
+}
+header a{
+  color:#616161;
+  text-decoration: none;
+}
+header a:hover{
+  color: red;
+}
+nav details summary{
+  font-weight: bold;
+}
+pre{
+  background:#FEC62E;
+}
+.hero{
+  height:350px;
+  background-image: linear-gradient(to top, rgba(255,255,255,.3), transparent), url('/img/patron-1.png');
+}
+h3::before{
+  content: '';
+}
+h3::after{
+content:'';
+width: 32px;
+height: 4px;
+background: red;
+display: block;
+}
