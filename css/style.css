@@ -37,13 +37,22 @@ pre{
   height:350px;
   background-image: linear-gradient(to top, rgba(255,255,255,.3), transparent), url('/img/patron-1.png');
 }
-h3::before{
-  content: '';
+.section-content{
+  counter-reset: titleList;
 }
-h3::after{
+
+.section-content h3{
+  counter-increment: titleList;
+}
+
+.section-content h3::after{
 content:'';
 width: 32px;
 height: 4px;
 background: red;
 display: block;
+}
+
+.section-content h3::before{
+  content: counter(titleList,decimal)"." " ";
 }
