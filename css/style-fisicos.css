@@ -68,6 +68,7 @@ blockquote span::before{
 }
 .section-content img {
   margin-top: 40px;
+  margin-left:-19px;
 }
 .section-content ul li{
   margin-top: 16px;
@@ -82,16 +83,32 @@ blockquote span::before{
 
 .section-content h3{
   counter-increment: titleList;
+  padding-bottom: 8px;
 }
 
 .section-content h3::after{
 content:'';
-width: 32px;
+width: 80px;
 height: 4px;
-background: red;
+background: #212121;
 display: block;
+/* display:inline-block;
+position: absolute;
+left:0;
+bottom:0; */
 }
-
 .section-content h3::before{
   content: counter(titleList,decimal)". ";
+}
+.main{
+  border: 1px solid red;
+  background: purple;
+}
+.wrapper{
+  width:902px;
+  margin: auto;
+}
+.main-content{
+  background: white;
+  padding: 20px;
 }
